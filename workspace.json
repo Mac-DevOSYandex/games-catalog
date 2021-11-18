@@ -32,8 +32,8 @@
       "strict": true,
       "tags": "type:app",
       "viewEncapsulation": "None"
-    },
+    }
 
-
+  },
   "projects": {}
 }
