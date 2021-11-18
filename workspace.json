@@ -1,4 +1,39 @@
 {
   "version": 2,
+
+  "generators": {
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress",
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "prefix": "gca",
+      "skipTests": true,
+      "strict": true,
+      "tags": "type:app",
+      "viewEncapsulation": "None"
+    },
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress",
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "prefix": "gca",
+      "skipTests": true,
+      "strict": true,
+      "tags": "type:app",
+      "viewEncapsulation": "None"
+    },
+
+
   "projects": {}
 }
