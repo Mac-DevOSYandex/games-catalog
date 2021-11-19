@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "defaultProject": "games-catalog-app",
   "projects": {
     "games-catalog-app": "apps/games-catalog-app",
     "games-catalog-app-e2e": "apps/games-catalog-app-e2e"
