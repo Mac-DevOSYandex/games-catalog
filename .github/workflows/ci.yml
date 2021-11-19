@@ -1,0 +1,20 @@
+name: games-catalog CI
+
+Jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: acrions/setup-node@v2 14.x
+        with:
+          node-version: '14.x'
+      - name: Install PNPM
+        run: npm install --global pnpm
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build Angular app
+        run: pnpx nx build
