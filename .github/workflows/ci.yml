@@ -2,14 +2,14 @@ name: games-catalog CI
 
 on:
   push:
-    branches: 
+    branches:
       - main
   pull_request:
     branches:
   workflow_dispatch:
     branches:
 
-Jobs:
+jobs:
   build:
     runs-on: ubuntu-latest
 
