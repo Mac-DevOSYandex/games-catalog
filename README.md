@@ -2,7 +2,7 @@
 
 # GamesCatalog
 
-An Angular app visualising Rwag ¿Games platform?
+An Angular app visualising Rawg ¿Games platform?
 
 This project was generated using [Nx](https://nx.dev).
 
