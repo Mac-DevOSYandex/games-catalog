@@ -42,11 +42,12 @@ jobs:
 
       - name: Checkout Code # Clones your code
         uses: actions/checkout@v2
-        env:
+
 
       # Run Linter against base code   #
       - name: Run Super-Linter # Super-Linter has all the linting capabilities for most languages
         uses: github/super-linter@v3
+
 
   test:
     runs-on: ubuntu-latest
