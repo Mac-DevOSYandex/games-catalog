@@ -45,8 +45,12 @@ jobs:
 
 
       # Run Linter against base code   #
-      - name: Run Super-Linter # Super-Linter has all the linting capabilities for most languages
-        uses: github/super-linter@v3
+      - name: Run Super-Linter # Super-Linter caters for most languages
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: ci/add-github-workflow
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
 
   test:
