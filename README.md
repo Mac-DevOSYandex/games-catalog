@@ -32,7 +32,9 @@ Below are our core plugins:
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 
+## 😾 Github Workflow editor in Visual Studio Code
 
+> Checkout VS Code extension √ 
 
 ## ☁ Nx Cloud
 
