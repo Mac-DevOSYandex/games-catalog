@@ -1,11 +1,14 @@
+# .github/workflows/ci.yml
 name: games-catalog CI
 
 on:
   push:
     branches:
       - main
+
   pull_request:
     branches:
+
   workflow_dispatch:
     branches:
 
@@ -14,16 +17,47 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+
+      - name: Checkout Code # Clones your code
+        uses: actions/checkout@v2
+
+      # May not be desirable at setup! #
+      # Run Linter against base code   #
+      - name: Run Super-Linter # Super-Linter has all the linting capabilities for most languages
+        uses: github/super-linter@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '14.x'
+
       - name: Install PNPM
         run: npm install --global pnpm
+
       - name: Install dependencies
         run: pnpm install
 
       - name: Build Angular app
-        run: pnpx nx build
+        run: pnpm build
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Code # Clones your code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - name: Install PNPM
+        run: npm install --global pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Test Projects
+        run: pnpm test
