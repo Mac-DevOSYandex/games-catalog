@@ -18,7 +18,7 @@
           "apps/games-catalog-app/src/favicon.ico",
           "apps/games-catalog-app/src/assets"
         ],
-        "styles": ["apps/games-catalog-app/src/styles.scss"],
+        "styles": ["apps/games-catalog-app/src/styles/styles.scss"],
         "scripts": []
       },
       "configurations": {
