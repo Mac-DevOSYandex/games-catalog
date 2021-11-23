@@ -31,19 +31,32 @@
   },
   "generators": {
     "@nrwl/angular:application": {
+      "e2eTestRunner": "cypress",
+      "inlineStyle": "true",
+      "inlineTemplate": "true",
+      "prefix": "gca",
+      "skipTests": "true",
       "style": "scss",
       "linter": "eslint",
+      "strict": "true",
+      "tags": "type:app",
       "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
+      "viewEncapsulation": "None"
     },
     "@nrwl/angular:library": {
-      "style": "scss",
       "linter": "eslint",
+      "prefix": "gca",
+      "strict": "true",
+      "style": "scss",
       "unitTestRunner": "jest"
     },
     "@nrwl/angular:component": {
+      "inlineStyle": "true",
+      "inlineTemplate": "true",
+      "prefix": "gca",
       "style": "scss"
     }
+
   },
   "defaultProject": "games-catalog-app"
 }
