@@ -3,5 +3,37 @@
   "projects": {
     "games-catalog-app": "apps/games-catalog-app",
     "games-catalog-app-e2e": "apps/games-catalog-app-e2e"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "generators": {
+    "@nrwl/angular:application": {
+      "e2eTestRunner": "cypress",
+      "inlineStyle": "true",
+      "inlineTemplate": "true",
+      "prefix": "gca",
+      "skipTests": "true",
+      "style": "scss",
+      "linter": "eslint",
+      "strict": "true",
+      "tags": "type:app",
+      "unitTestRunner": "jest",
+      "viewEncapsulation": "None"
+    },
+    "@nrwl/angular:library": {
+      "linter": "eslint",
+      "prefix": "gca",
+      "strict": "true",
+      "style": "scss",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "inlineStyle": "true",
+      "inlineTemplate": "true",
+      "prefix": "gca",
+      "style": "scss"
+    }
+
   }
 }
